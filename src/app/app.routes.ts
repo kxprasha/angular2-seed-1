@@ -4,6 +4,7 @@ import {Home} from './home/home';
 import {RepoBrowser} from './github/repo-browser/repo-browser';
 import {RepoList} from './github/repo-list/repo-list';
 import {RepoDetail} from './github/repo-detail/repo-detail';
+import {GraphicsComponent} from './graphics/graphics.component'
 
 export const rootRouterConfig: Routes = [
   {path: '', redirectTo: 'home', terminal: true},
@@ -18,6 +19,7 @@ export const rootRouterConfig: Routes = [
           {path: ':repo', component: RepoDetail}
         ]
       }]
-  }
+  },
+  {path: 'graphics', component: GraphicsComponent}
 ];
 
